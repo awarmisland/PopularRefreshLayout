@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/flt_all"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/material_blue">
+    <com.awarmisland.android.popularrefreshlayout.RefreshLayout
+        android:id="@+id/refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/material_red">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/timg"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="内容"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"/>
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center"
+                    android:text="上拉查看图文详情"/>
+            </LinearLayout>
+        </ScrollView>
+    </com.awarmisland.android.popularrefreshlayout.RefreshLayout>
+    <LinearLayout
+        android:id="@+id/llt_detail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="详情"/>
+        <com.awarmisland.android.popularrefreshlayout.RefreshLayout
+            android:id="@+id/refresh_detail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/material_green">
+            <include layout="@layout/include_good_detail"/>
+        </com.awarmisland.android.popularrefreshlayout.RefreshLayout>
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:paddingBottom="10dp">
+   <ProgressBar
+       android:id="@+id/pbr_loading"
+       android:layout_width="20dp"
+       android:layout_height="20dp"
+       android:indeterminateDrawable="@drawable/refresh_layout_progress_loading"/>
+    <TextView
+        android:id="@+id/tvw_tips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:textColor="#666666"
+        android:textSize="14sp"
+        android:text="正在加载更多数据..."/>
+</LinearLayout>

@@ -9,7 +9,6 @@ Android通用可自定义下拉刷新上拉加载组件PopularRefreshLayout
 1. gradle.build中添加引用 compile 'com.awarmisland.android:popularrefreshlayout:1.0.4'
 
 2. 将需要下拉刷新的内容外面添加组件
-![image](https://img-blog.csdn.net/20170208205310710)
 ```xml
  <com.awarmisland.android.popularrefreshlayout.RefreshLayout
         android:id="@+id/refresh"

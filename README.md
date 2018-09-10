@@ -3,6 +3,7 @@ Android通用可自定义下拉刷新上拉加载组件PopularRefreshLayout
 
 功能简述
 目前，小编设置两种下拉刷新效果，一种是经典默认下拉刷新效果，一种是Material风格的，如效果图所示。经过调试，PopularRefreshLayout支持ScrollView ,ListView,WebView等。
+
 ![image](https://github.com/awarmisland/PopularRefreshLayout/blob/master/20170208205310710.gif)
 
 使用方式
